@@ -31,7 +31,7 @@ echo;
 read -p "Hit enter to start Glance setup. " -n 1 -r
 
 # get glance
-apt-get install glance -y
+apt-get install -y glance -y
 
 # edit glance api conf files 
 if [ -f /etc/glance/glance-api.conf.orig ]

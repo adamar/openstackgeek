@@ -29,7 +29,7 @@ echo;
 read -p "Hit enter to start Quantum setup. " -n 1 -r
 
 # install packages for linux-bridge
-apt-get install -y quantum-server quantum-plugin-linuxbridge quantum-plugin-linuxbridge-agent dnsmasq quantum-dhcp-agent quantum-l3-agent
+apt-get install -y -y quantum-server quantum-plugin-linuxbridge quantum-plugin-linuxbridge-agent dnsmasq quantum-dhcp-agent quantum-l3-agent
 
 # edit quantum files 
 if [ -f /etc/quantum/quantum.conf.orig ]

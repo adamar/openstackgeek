@@ -34,7 +34,7 @@ echo;
 read -p "Hit enter to start Nova setup. " -n 1 -r
 
 # install packages
-apt-get install -y nova-api nova-cert novnc nova-consoleauth nova-scheduler nova-novncproxy nova-doc nova-conductor nova-compute-kvm
+apt-get install -y -y nova-api nova-cert novnc nova-consoleauth nova-scheduler nova-novncproxy nova-doc nova-conductor nova-compute-kvm
 
 # hack up the nova paste file
 sed -e "

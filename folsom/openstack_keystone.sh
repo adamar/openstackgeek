@@ -26,7 +26,7 @@ echo;
 read -p "Hit enter to start Keystone setup. " -n 1 -r
 
 # get keystone
-apt-get install keystone -y
+apt-get install -y keystone -y
 
 # some vars from the SG setup file getting locally reassigned 
 password=$SG_SERVICE_PASSWORD

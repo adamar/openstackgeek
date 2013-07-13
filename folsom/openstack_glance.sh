@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # get glance
-apt-get install glance -y
+apt-get install -y glance -y
 
 . ./stackrc
 password=$SERVICE_PASSWORD

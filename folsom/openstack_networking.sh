@@ -7,13 +7,13 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # bridge stuff
-apt-get install vlan bridge-utils -y
+apt-get install -y vlan bridge-utils -y
 
 # kvm
-apt-get install kvm libvirt-bin pm-utils -y
+apt-get install -y kvm libvirt-bin pm-utils -y
 
 # install time server
-apt-get install ntp -y
+apt-get install -y ntp -y
 service ntp restart
 
 # modify timeserver configuration

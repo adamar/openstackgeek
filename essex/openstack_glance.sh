@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # get glance
-apt-get install glance glance-api glance-client glance-common glance-registry python-glance
+apt-get install -y glance glance-api glance-client glance-common glance-registry python-glance
 
 . ./stackrc
 password=$SERVICE_PASSWORD

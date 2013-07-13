@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # get keystone
-apt-get install keystone python-keystone python-keystoneclient
+apt-get install -y keystone python-keystone python-keystoneclient
 
 read -p "Enter a token for the OpenStack services to auth with keystone: " token
 read -p "Enter the password you used for the MySQL users (nova, glance, keystone): " password

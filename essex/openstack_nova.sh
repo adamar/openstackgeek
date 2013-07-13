@@ -21,7 +21,7 @@ read -p "Enter the floating network (eg. 10.0.1.224/27): " floating_range
 read -p "Enter the floating netowrk size (eg. 32): " floating_size
 
 # get nova
-apt-get install nova-api nova-cert nova-common nova-compute nova-compute-kvm nova-doc nova-network nova-objectstore nova-scheduler nova-vncproxy nova-volume python-nova python-novaclient
+apt-get install -y nova-api nova-cert nova-common nova-compute nova-compute-kvm nova-doc nova-network nova-objectstore nova-scheduler nova-vncproxy nova-volume python-nova python-novaclient
 
 . ./stackrc
 password=$SERVICE_PASSWORD

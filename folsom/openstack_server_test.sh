@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # install and run kvm-ok to see if we have virt capabilities
-apt-get install cpu-checker -y
+apt-get install -y cpu-checker -y
 if /usr/sbin/kvm-ok
 then echo "#################################################################################################
 

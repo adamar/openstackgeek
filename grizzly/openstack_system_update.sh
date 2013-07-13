@@ -15,7 +15,7 @@ else
   echo 'deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/grizzly main' >> /etc/apt/sources.list
 fi
 
-apt-get install ubuntu-cloud-keyring -y
+apt-get install -y ubuntu-cloud-keyring -y
 aptitude update -y
 aptitude upgrade -y
 

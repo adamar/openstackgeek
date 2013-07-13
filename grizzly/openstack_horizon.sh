@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # get horizon
-apt-get install -y openstack-dashboard memcached
+apt-get install -y -y openstack-dashboard memcached
 
 # restart apache
 service apache2 restart; service memcached restart

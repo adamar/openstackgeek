@@ -9,7 +9,7 @@ fi
 . ./setuprc
 
 # throw in a few other services we need installed
-apt-get install rabbitmq-server memcached python-memcache -y
+apt-get install -y rabbitmq-server memcached python-memcache -y
 
 # now let's install MySQL
 echo;
@@ -21,7 +21,7 @@ echo "##########################################################################
 echo;
 
 # mysql
-apt-get install -y mysql-server python-mysqldb
+apt-get install -y -y mysql-server python-mysqldb
 
 # make mysql listen on 0.0.0.0
 sudo sed -i '/^bind-address/s/127.0.0.1/0.0.0.0/g' /etc/mysql/my.cnf

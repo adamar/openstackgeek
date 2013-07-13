@@ -46,9 +46,9 @@ else
 fi
 
 # install packages and toggle iscitarget
-apt-get install -y iscsitarget iscsitarget-source
-apt-get install -y open-iscsi iscsitarget-dkms
-apt-get install -y cinder-api cinder-scheduler cinder-volume 
+apt-get install -y -y iscsitarget iscsitarget-source
+apt-get install -y -y open-iscsi iscsitarget-dkms
+apt-get install -y -y cinder-api cinder-scheduler cinder-volume 
 sed -i 's/false/true/g' /etc/default/iscsitarget
 
 # hack up the cinder paste file

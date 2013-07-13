@@ -7,13 +7,13 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # bridge stuff
-apt-get install bridge-utils
+apt-get install -y bridge-utils
 
 # rabbit food
-apt-get install rabbitmq-server memcached python-memcache
+apt-get install -y rabbitmq-server memcached python-memcache
 
 # kvm
-apt-get install kvm libvirt-bin
+apt-get install -y kvm libvirt-bin
 
 echo "#################################################################################################
 You'll need a LVM for 'nova-volumes'.  This assumes you have an empty disk spinning at /dev/sdb:
